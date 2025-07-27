@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="container">
+        <nav class="navbar flex">
+
+          <!--Website Logo-->
+          <div class="logo-icon">
+            <img src="images/logo-bookmark.svg" alt>
+          </div>
+
+          <!--Navigation links-->
+          <ul class="nav-links">
+            <li class="nav-item"><a href
+                class="nav-link uppercase">Features</a></li>
+            <li class="nav-item"><a href
+                class="nav-link uppercase">Pricing</a></li>
+            <li class="nav-item"><a href class="nav-link uppercase">Contact</a>
+            </li>
+            <li><button
+                class="btn bg-red white-text uppercase login">Login</button></li>
+          </ul>
+
+          <div class="media-list">
+            <img src="images/icon-facebook.svg" alt>
+            <img src="images/icon-twitter.svg" alt>
+          </div>
+
+          <!--Mobile Menu Button-->
+          <button class="hamburger-icon">
+            <img src="images/icon-hamburger.svg" class="hamburger" alt>
+            <img src="images/icon-close.svg" class="close-icon" alt="Close"
+              style="display: none;">
+          </button>
+        </nav>
+
+        <div class="intro flex">
+          <div class="intro-col-left">
+            <h1>
+              A Simple Bookmark <br />
+              Manager
+            </h1>
+            <p class="grey-text">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="btn-group flex">
+              <a class="btn bg-blue white-text   chrome">Get it on chrome</a>
+              <a class="btn bg-white grey-text firefox">Get it on firefox</a>
+            </div>
+          </div>
+
+          <div class="intro-col-right">
+            <img src="./images/illustration-hero.svg" alt />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- features section start -->
+    <section class="feature">
+      <div class="container">
+        <h2 class="section-heading">
+          Features
+        </h2>
+        <p class="section-description grey-text">
+          Our aim is to make it quick and easy for you to access your
+          favourite websites.
+          Your bookmarks sync between your devices so you can access them on
+          the go.
+        </p>
+        <div class="tab-container">
+          <ul class="tab-nav flex">
+            <li class="one active"> Simple Bookmarking</li>
+            <li class="two"> Speedy Searching</li>
+            <li class="three">Easy Sharing</li>
+          </ul>
+
+          <div class="tab-body tab-one flex active">
+            <div class="tab-col-left">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="illustration" />
+            </div>
+
+            <div class="tab-col-right">
+              <div class="content">
+                <h2>Bookmark in one click</h2>
+                <p class="grey-text">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <a href="#" class="btn bg-blue white-text info">More Info</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-body tab-two flex">
+            <div class="tab-col-left">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="illustration" />
+            </div>
+            <div class="tab-col-right">
+              <div class="content">
+                <h2>Intelligent search</h2>
+                <p>
+                  Our powerful search feature will help you find saved sites
+                  in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <a href="#" class="btn bg-blue white-text info">More Info</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-body tab-three flex">
+            <div class="tab-col-left">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="illustration" />
+            </div>
+            <div class="tab-col-right">
+              <div class="content">
+                <h2>Share your bookmarks</h2>
+                <p>
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <a href="#" class="btn bg-blue white-text info">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--download section starts here-->
+    <section class="download">
+      <div class="container">
+        <h2 class="section-heading"> Download the extension</h2>
+        <p class="section-description grey-text">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve
+          got a favourite you’d like us to prioritize.
+        </p>
+
+        <div class="browser-cards flex">
+          <div class="card">
+            <img src="./images/logo-chrome.svg" alt="chrome logo" />
+            <h4>Add to Chrome</h4>
+            <p class="grey-text">Minimum version 62</p>
+            <a href="#" class="btn bg-blue white-text info">Add & Install
+              Extension</a>
+          </div>
+
+          <div class="card">
+            <img src="./images/logo-firefox.svg" alt="chrome logo" />
+            <h4>Add to Firefox</h4>
+            <p class="grey-text">Minimum version 55</p>
+            <a href="#" class="btn bg-blue white-text info">Add & Install
+              Extension</a>
+          </div>
+
+          <div class="card">
+            <img src="./images/logo-opera.svg" alt="chrome logo" />
+            <h4>Add to Opera</h4>
+            <p class="grey-text">Minimum version 46</p>
+            <a href="#" class="btn bg-blue white-text info">Add & Install
+              Extension</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!--FAQ-->
+      <section class="faq">
+        <div class="container">
+          <h2 class="section-heading"> Frequently Asked <br> Questions</h2>
+          <p class="section-description grey-text">
+            Here are some of our FAQs.
+            If you have any other questions you’d like
+            answered please feel free to email us.
+          </p>
+
+          <div class="tab-question">
+
+            <div class="question">
+              <button>
+                <span>What is Bookmark?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8" />
+                </svg>
+              </button>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum
+                quis quam ornare mattis.
+              </p>
+
+            </div>
+
+            <div class="question">
+              <button>
+                <span>How can I request a new browser?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8" />
+                </svg>
+              </button>
+              <p>
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus
+                eros aliquet convallis ultricies. Mauris augue massa, ultricies
+                non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+                convallis ultricies. Mauris augue massa, ultricies non ligula.
+                Suspendisse imperdiet.
+              </p>
+            </div>
+
+            <div class="question">
+              <button>
+                <span>Is there a mobile app?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8" />
+                </svg>
+              </button>
+              <p>
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus
+                vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+                ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+
+            <div class="question">
+              <button>
+                <span>What about other Chromium browsers?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8" />
+                </svg>
+              </button>
+              <p>
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida
+                pellentesque non ut velit.
+              </p>
+            </div>
+
+            <div class="center">
+              <a href="#" class="btn bg-blue white-text info">More Info</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe bg-blue white-text">
+        <div class="container-sub">
+          <span class="heading-sm uppercase">35,000+ already joined</span>
+          <h2>
+            Stay up-to-date with what <br />
+            we’re doing
+          </h2>
+
+          <form class="subscribe-form flex">
+            <input
+              type="email"
+              data-error="Whoops, make sure it's an email"
+              placeholder="Enter your email address" />
+            <button class="btn bg-red white-text submit ">Contact us</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <ul class="footer-nav flex">
+
+          <button class="logo-footer">
+            <img src="images/logo-bookmark.svg" alt>
+          </button>
+          
+          <li class="nav-item"><a href
+              class="nav-link  uppercase">Features</a></li>
+          <li class="nav-item"><a href
+              class="nav-link uppercase">Pricing</a></li>
+          <li class="nav-item"><a href class="nav-link uppercase">Contact</a>
+          </li>
+
+          <div class="media-list flex">
+            <img src="images/icon-facebook.svg" alt>
+            <img src="images/icon-twitter.svg" alt>
+          </div>
+
+        </ul>
+      </footer>
+
+      <!--
+ Question 1 
+  
+
+  Answer 1 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+
+   Question 2 
+  
+
+   Answer 2 
+  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+   Question 3 
+  
+
+   Answer 3 
+  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum.
+
+   Question 4   
+
+   Answer 4 
+  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit.
+
+  More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+  -->
+    </body>
+  </html>
