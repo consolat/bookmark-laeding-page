@@ -583,22 +583,28 @@ header .container {
         padding: 2rem 1rem;
     }
 
-    .nav-links {
+  .nav-links {
+        position: static; /* Reset fixed positioning */
+        width: auto; /* Reset full width */
+        height: auto; /* Reset full viewport height */
+        background-color: transparent; /* Remove mobile overlay background */
+        opacity: 1; /* Ensure visibility */
+        pointer-events: auto; /* Enable interactions */
         display: flex;
+        flex-direction: row; /* Horizontal layout */
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 2rem;
         list-style: none;
         font-size: var(--fs-150);
+        padding: 0; /* Remove default padding if needed */
     }
 
-    
- .nav-links .nav-item .nav-link {
+    .nav-links .nav-item .nav-link {
         text-decoration: none;
-        color: var(--black);
+        color: var(--black); /* Ensure links are visible (already in your code) */
     }
-
-
+    
     .media-list {
         display: flex;
         /* or block depending on your needs */
